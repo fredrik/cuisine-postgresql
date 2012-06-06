@@ -2,7 +2,7 @@ try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
-from cuisine_postgresql import __version__, __maintainer__, __email__
+from version import __version__, __maintainer__, __email__
 
 
 license_text = open('LICENSE.txt').read()

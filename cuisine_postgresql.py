@@ -3,11 +3,6 @@ from fabric.operations import sudo
 from fabric.utils import puts
 
 
-__version__ = '0.1.0'
-__maintainer__ = u'Atamert \xd6l\xe7gen'
-__email__ = 'muhuk@muhuk.com'
-
-
 def postgresql_database_check(database_name):
     cmd = 'psql -U postgres -l | grep \'{0}  *|\''.format(database_name)
     with settings(hide('everything'), warn_only=True):
